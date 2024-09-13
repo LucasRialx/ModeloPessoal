@@ -175,6 +175,7 @@ footer {
   .skills li {
     flex-direction: column;
     align-items: flex-start;
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
   }
 
   .skill-name {
@@ -184,12 +185,22 @@ footer {
   }
 
   .progress-bar {
-    width: 100%; /* Faz a barra de progresso ocupar toda a largura disponível */
-    height: 20px; /* Mantém uma altura adequada para dispositivos móveis */
+    width: 100%; /* Ocupa 100% da largura disponível */
+    height: 20px; /* Ajusta a altura da barra de progresso */
+    background-color: #f5d6d6;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden; /* Garante que o conteúdo da barra não vaze */
   }
 
   .progress {
-    height: 100%; /* Garante que a barra de progresso preencha corretamente a altura */
+    background-color: #0b4109; /* Cor da barra interna (vermelho sangue) */
+    height: 100%;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease-in-out;
   }
 
   h1 {
@@ -229,17 +240,15 @@ footer {
   }
 
   .progress-bar {
-    width: 100%; /* Garante que a barra ocupe a largura total */
-    height: 15px; /* Reduz a altura da barra em dispositivos menores */
+    width: 100%;
+    height: 15px; /* Ajusta a altura da barra de progresso para telas pequenas */
   }
 
   .progress {
-    height: 100%;
+    height: 100%; /* Garante que a barra de progresso interna ocupe a altura total */
   }
 
   .contact-section ul li a {
     font-size: 1em;
   }
 }
-
-
