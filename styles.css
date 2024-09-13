@@ -149,7 +149,7 @@ footer {
     margin-right: 10px;
 }
 
-/* Responsividade para telas menores que 768px (tablets e smartphones) */
+/* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -163,7 +163,7 @@ footer {
   }
 
   .profile img {
-    max-width: 200px;
+    max-width: 150px;
     margin-right: 0;
     margin-bottom: 20px;
   }
@@ -173,28 +173,28 @@ footer {
   }
 
   .skills li {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
+    display: block; /* Garante que cada skill ocupe uma linha completa */
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .skill-name {
-    margin-right: 0;
     margin-bottom: 10px;
-    width: auto;
+    width: 100%;
+    text-align: left; /* Garante que o nome da skill seja alinhado à esquerda */
   }
 
   .progress-bar {
-    width: 100%; /* Ocupa 100% da largura disponível */
-    height: 20px; /* Ajusta a altura da barra de progresso */
+    width: 100%;
+    height: 20px;
     background-color: #f5d6d6;
     border-radius: 12px;
     position: relative;
-    overflow: hidden; /* Garante que o conteúdo da barra não vaze */
+    overflow: hidden;
   }
 
   .progress {
-    background-color: #0b4109; /* Cor da barra interna (vermelho sangue) */
+    background-color: #0b4109; /* Vermelho sangue */
     height: 100%;
     border-radius: 12px;
     position: absolute;
@@ -236,7 +236,7 @@ footer {
   }
 
   .profile img {
-    max-width: 150px;
+    max-width: 100px;
   }
 
   .progress-bar {
