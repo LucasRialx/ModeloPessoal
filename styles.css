@@ -1,0 +1,150 @@
+body {
+    font-family: sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante a altura total da viewport */
+    background-color: #111; /* Cor de fundo de fallback */
+    background-image: url('background.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área do corpo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 60px; /* Ajuste a altura conforme necessário */
+    background-color: #222;
+    padding: 0 20px; /* Adiciona um pouco de padding nas laterais */
+}
+
+header h2 {
+    margin: 0; /* Remove a margem padrão do <h2> */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    flex: 1; /* Allow the container to grow and push the footer down */
+}
+
+.left {
+    flex: 1;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 10%;
+    margin-right: 48px;
+    object-fit: cover; /* Mantém o conteúdo da imagem sem distorções */
+}
+
+.skills {
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-right: 10px;
+    width: 150px;
+}
+
+.progress-bar {
+    background-color: #f5d6d6;
+    height: 30px;
+    border-radius: 12px;
+    flex: 1;
+    margin-right: 10px;
+    position: relative;
+}
+
+.progress {
+    background-color: #0b4109; /* Vermelho sangue */
+    height: 100%;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.percent {
+    min-width: 250px;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-section ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.contact-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Icon styles */
+.contact-section i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
