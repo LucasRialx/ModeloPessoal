@@ -148,3 +148,87 @@ footer {
     font-size: 1.5em;
     margin-right: 10px;
 }
+
+/* Responsividade para telas menores que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Empilha os itens verticalmente */
+    padding: 10px;
+  }
+
+  .profile {
+    flex-direction: column; /* Coloca a imagem e as skills uma embaixo da outra */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .profile img {
+    max-width: 200px; /* Reduz o tamanho da imagem em telas menores */
+    margin-right: 0; /* Remove o espaçamento lateral */
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo da imagem */
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .skills li {
+    flex-direction: column; /* Coloca o nome da skill e a barra de progresso em linhas separadas */
+    align-items: flex-start;
+  }
+
+  .skill-name {
+    margin-right: 0;
+    margin-bottom: 10px; /* Adiciona espaçamento abaixo do nome da skill */
+    width: auto;
+  }
+
+  .progress-bar {
+    width: 100%; /* Faz a barra de progresso ocupar toda a largura disponível */
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  header {
+    height: auto;
+    padding: 10px;
+  }
+
+  header h2 {
+    font-size: 1.5em; /* Reduz o tamanho da fonte do cabeçalho */
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .contact-section h2 {
+    font-size: 2em;
+  }
+
+  .contact-section ul li {
+    font-size: 1em; /* Ajusta o tamanho da fonte para links de contato */
+  }
+}
+
+/* Responsividade para telas menores que 480px (smartphones menores) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .profile img {
+    max-width: 150px; /* Reduz ainda mais a imagem para smartphones pequenos */
+  }
+
+  .progress-bar {
+    height: 20px; /* Reduz a altura da barra de progresso em telas menores */
+  }
+
+  .contact-section ul li a {
+    font-size: 1em; /* Ajusta o tamanho dos links de contato */
+  }
+}
+
